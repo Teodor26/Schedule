@@ -83,9 +83,15 @@ namespace Bussines.Logic
 
             if (chossenGroup == newGroup[0])
             {
-                for (int i = 0; i < nullGroup.Length; i++)
+                for (int i = 0; i <= nullGroup.Length; i++)
                 {
-                    if (nullGroup[i] == null)
+                    if(i==nullGroup.Length)
+                    {
+                        Console.WriteLine("The group is full.Try another group");
+                        Console.ReadLine();
+                        break;
+                    }
+                    else if (nullGroup[i] == null)
                     {
                         nullGroup[i] = student;
                         break;
@@ -110,9 +116,15 @@ namespace Bussines.Logic
 
            else if (chossenGroup == newGroup[1])
             {
-                for (int i = 0; i < firstGroup.Length; i++)
+                for (int i = 0; i <= firstGroup.Length; i++)
                 {
-                    if (firstGroup[i] == null)
+                    if (i == firstGroup.Length)
+                    {
+                        Console.WriteLine("The group is full.Try another group");
+                        Console.ReadLine();
+                        break;
+                    }
+                    else if (firstGroup[i] == null)
                     {
                         firstGroup[i] = student;
                         break;
@@ -135,9 +147,15 @@ namespace Bussines.Logic
             }
             else if(chossenGroup == newGroup[2])
             {
-                for (int i = 0; i < secondGroup.Length; i++)
+                for (int i = 0; i <=secondGroup.Length; i++)
                 {
-                    if (secondGroup[i] == null)
+                    if (i == secondGroup.Length)
+                    {
+                        Console.WriteLine("The group is full.Try another group");
+                        Console.ReadLine();
+                        break;
+                    }
+                    else if (secondGroup[i] == null)
                     {
                         secondGroup[i] = student;
                         break;
@@ -162,9 +180,15 @@ namespace Bussines.Logic
             
             else if (chossenGroup == newGroup[3])
             {
-                for (int i = 0; i < thirdGroup.Length; i++)
+                for (int i = 0; i <=thirdGroup.Length; i++)
                 {
-                    if (thirdGroup[i] == null)
+                    if (i == nullGroup.Length)
+                    {
+                        Console.WriteLine("The group is full.Try another group");
+                        Console.ReadLine();
+                        break;
+                    }
+                    else if (thirdGroup[i] == null)
                     {
                         thirdGroup[i] = student;
                         break;
@@ -188,9 +212,15 @@ namespace Bussines.Logic
 
             else if (chossenGroup == newGroup[4])
             {
-                for (int i = 0; i < fourthGroup.Length; i++)
+                for (int i = 0; i <= fourthGroup.Length; i++)
                 {
-                    if (fourthGroup[i] == null)
+                    if (i == nullGroup.Length)
+                    {
+                        Console.WriteLine("The group is full.Try another group");
+                        Console.ReadLine();
+                        break;
+                    }
+                    else if (fourthGroup[i] == null)
                     {
                         fourthGroup[i] = student;
                         break;
@@ -212,9 +242,15 @@ namespace Bussines.Logic
 
             else if (chossenGroup == newGroup[5])
             {
-                for (int i = 0; i < fifthGroup.Length; i++)
+                for (int i = 0; i <= fifthGroup.Length; i++)
                 {
-                    if (fifthGroup[i] == null)
+                    if (i == nullGroup.Length)
+                    {
+                        Console.WriteLine("The group is full.Try another group");
+                        Console.ReadLine();
+                        break;
+                    }
+                    else if (fifthGroup[i] == null)
                     {
                         fifthGroup[i] = student;
                         break;
