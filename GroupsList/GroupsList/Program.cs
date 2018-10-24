@@ -14,6 +14,7 @@ namespace GroupsList
         {
             
             Schedule schedule = new Schedule();
+
             do
             {
                 Console.Clear();
